@@ -100,9 +100,9 @@ Si eres evaluador de Acamica en este proyecto se valido el siguiente Checklist:
 - [X] Condición 1: poder registrar un nuevo usuario.
 - [X] Condición 2: un usuario debe poder listar todos los productos disponibles.
 - [X] Condición 3: un usuario debe poder generar un nuevo pedido al restaurante con u listado de platos que desea.
-- [X]Condición 4: el usuario con roles de administrador debe poder actualizar el estado del pedido.
+- [X] Condición 4: el usuario con roles de administrador debe poder actualizar el estado del pedido.
 - [X] Condición 5: un usuario con rol de administrador debe poder realizar las acciones de creación, edición y eliminación de recursos de productos (CRUD de productos).
-- [X]Condición 6: un usuario sin roles de administrador no debe poder crear, editar o eliminar un producto, ni editar o eliminar un pedido. Así como no debe poder acceder a informaciones de otros usuarios.
+- [X] Condición 6: un usuario sin roles de administrador no debe poder crear, editar o eliminar un producto, ni editar o eliminar un pedido. Así como no debe poder acceder a informaciones de otros usuarios.
 
 GRACIAS!
 
