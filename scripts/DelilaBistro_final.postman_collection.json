@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "5da64ee4-1a04-4f71-9323-beb55ab227af",
+		"name": "DelilaBistro_final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"usuario\": \"super-admin\",\n        \"contrasena\": \"admin123\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"usuario\": \"super-admin\",\n        \"nombre\": \"admin\",\n        \"telefono\": \"506000\",\n        \"correo\": \"Verospi@gmail.com\",\n        \"direccion\": \"cr 85d mo 53-20\",\n        \"contrasena\": \"1234pass\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "ObtenerProducto_ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/productos/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"productos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerTodosProductos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoiVmVyb25pY2EiLCJub21icmUiOiJWZXJvIG9zcGluYSIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk2OTAyMzR9.wLkQuPkU9HQPr_LgezWC59mFPtB_TNAlF3VdWNdoq0A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarProducto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearProducto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JII",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"nombreProducto\": \"Hamburguesa\",\n        \"precio\": 8000,\n        \"imagenUrl\": \"https://exitocol.vtexassets.com/arquivos/ids/1030803/Vino-Rosado-Lambrusco-Reggiano-X-750-ml-982265_a.jpg?v=637124782773570000\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarProducto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n \t   \"id\": 2,\n        \"nombreProducto\": \"Vino Tinto\",\n        \"precio\": 18000,\n        \"imagenUrl\": \"https://carlosposadaa.com/vino.jpg\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/productos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"productos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Ordenes",
+			"item": [
+				{
+					"name": "IngresarOrden",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXN1YXJpbyI6IkNhcmxvcyIsImlhdCI6MTU4OTg1MTQ2N30.IsgdentjZwMePgJ0wtzk8f-a4nls3AWuLF4gwGECt1w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"idFormaPago\": 1,\n        \"idProducto\": 1,\n        \"cantidadProductos\": 1\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ordenes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ordenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerOrden_ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ordenes/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ordenes",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerOrdenes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/ordenes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ordenes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarEstadoOrden",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"idEstado\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ordenes/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ordenes",
+								"18"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

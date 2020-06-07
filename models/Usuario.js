@@ -1,6 +1,4 @@
-const Sequelize = require('sequelize');
-
-const sequelize = new Sequelize('mysql://master_carlos:admin8080@automosaiko.tk:3306/master_carlos');
+const sequelize = require('../config/configDB');
 
 const Usuario = {};
 

@@ -69,8 +69,7 @@ CREATE TABLE ordenes(
     fechaCreacion DATE NOT NULL,
     fechaActualizacion DATE NOT NULL
 );
--- quitar hora creacion y en guardar hora en la fecha de creacion
---agregar cantidades
+
 -- Creacion ordenes por producto
 CREATE TABLE ordenes_producto(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,

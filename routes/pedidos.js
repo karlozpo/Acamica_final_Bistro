@@ -13,7 +13,7 @@ router
     try {
       const { idFormaPago, idProducto, cantidadProductos } = req.body;
       const idUsuario = req.usuarioLogueado.id;
-      const idOrdenCreada = await Pedido.crear0(idUsuario, idFormaPago);
+      const idOrdenCreada = await Pedido.crear(idUsuario, idFormaPago);
       const idPedidoProducto = await Pedido.addProductos(
         idOrdenCreada,
         idProducto,
