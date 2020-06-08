@@ -1,3 +1,6 @@
+CREATE DATABASE delilaBistro;
+USE delilaBistro;
+
 -- Creacion tabla de usuarios
 CREATE TABLE usuarios(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -36,7 +39,7 @@ CREATE TABLE formaPago(
 );
 -- Insertar Formas de pago en tabla de Forma de pago
 INSERT INTO formaPago(tipoDePago)
-VALUES('Credito'),('Debito'),('Efectivo')
+VALUES('Credito'),('Debito'),('Efectivo');
 
 -- Creacion tabla de Estados de los pedidos
 CREATE TABLE estadoPedido(
@@ -46,7 +49,7 @@ CREATE TABLE estadoPedido(
 
 -- Insertar estados en tabla de estado de los pedidos
 INSERT INTO estadoPedido(estado)
-VALUES('Nuevo'),('Confirmado'),('Cancelado'),('Preparando'),('Enviando'),('Entregado')
+VALUES('Nuevo'),('Confirmado'),('Cancelado'),('Preparando'),('Enviando'),('Entregado');
 
 -- Creacion tabla de Productos
 CREATE TABLE productos(
@@ -65,7 +68,7 @@ CREATE TABLE ordenes(
     FOREIGN KEY(idUsuario) REFERENCES usuarios(id),
     FOREIGN KEY(idFormaPago) REFERENCES formaPago(id),
     FOREIGN KEY(idEstado) REFERENCES estadoPedido(id),
-    horaCreacion NOT NULL,
+    horaCreacion DATE NOT NULL,
     fechaCreacion DATE NOT NULL,
     fechaActualizacion DATE NOT NULL
 );

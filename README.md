@@ -50,7 +50,7 @@ config\configDB.js
 En esta ubicacion se encuentra configurado por defecto el servidor de pruebas, pero puedes ingresar tu datos para cambiarlos de la siguiente manera :
 
 ```js
-const bd_name= 'tu_database'; // nombre de tu base de datos;
+const bd_name= 'delilaBistro'; // Por defecto es delilaBistro o nombre de tu base de datos;
 const bd_user= 'tu_usuario'; // nombre de tu usuario;
 const bd_password= 'tu_password'; // contraseña de tu usuario;
 const bd_host= 'tudominio.com'; // Hosting;
