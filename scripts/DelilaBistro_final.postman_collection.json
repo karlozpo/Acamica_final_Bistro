@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5da64ee4-1a04-4f71-9323-beb55ab227af",
+		"_postman_id": "3df3fa86-391b-44d4-ac67-36016eedb663",
 		"name": "DelilaBistro_final",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -45,7 +45,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDY5MDgzfQ.tVnwL2Et_3kDKCkrqMHs8OxwgFoi7OwhseOgCKerHi8",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI",
 								"type": "text"
 							}
 						],
@@ -71,7 +71,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"usuario\": \"caliche\",\n        \"nombre\": \"carlos Posada\",\n        \"telefono\": \"8682992\",\n        \"correo\": \"carlosp@gmail.com\",\n        \"direccion\": \"cr 77d mo 53-20\",\n        \"contrasena\": \"1234pass\"\n    }",
+							"raw": "{\n        \"usuario\": \"Caliche1\",\n        \"nombre\": \"Carlos Posada\",\n        \"telefono\": \"55555\",\n        \"correo\": \"Carlospod@gmail.com\",\n        \"direccion\": \"cr 85d mo 53-20\",\n        \"contrasena\": \"1234pass\"\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -147,19 +147,19 @@
 					"response": []
 				},
 				{
-					"name": "EliminarProducto",
+					"name": "EliminarProductoo",
 					"request": {
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "authorization",
 								"type": "text",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDY5MTUwfQ.ZGOj4UI64dr4E84SpZV0ARIJULfXEu9eIrKiCbgAfzU"
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDcyOTEwfQ.oQudUhoszM2m-QYkjYnOYGR1ZYmSh1Ko_YwAHB6Edqo"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"id\":3\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -167,7 +167,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/productos/3",
+							"raw": "http://localhost:3000/api/productos/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -176,7 +176,7 @@
 							"path": [
 								"api",
 								"productos",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -189,13 +189,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDY0MTc2fQ.lczqGpA_JaebCzGbrxfOtgyrbsBD7zAcr7SIf8C7lDI",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDcwNDYzfQ.k6v-5DRtO7RMurU42m7JqFERPBpOFHs1yACQ8Qia7RM",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"nombreProducto\": \"Colombiana\",\n        \"precio\": 3000,\n        \"imagenUrl\": \"https://exitocol.vtexassets.com/arquivos/ids/1030803/Vino-Rosado-Lambrusco-Reggiano-X-750-ml-982265_a.jpg?v=637124782773570000\"\n    }",
+							"raw": "{\n        \"nombreProducto\": \"Pizza\",\n        \"precio\": 8000,\n        \"imagenUrl\": \"https://exitocol.vtexassets.com/arquivos/ids/1030803/Vino-Rosado-Lambrusco-Reggiano-X-750-ml-982265_a.jpg?v=637124782773570000\"\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -230,7 +230,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": " {\n \t   \"id\": 1,\n        \"nombreProducto\": \"Vino Tinto\",\n        \"precio\": 18000,\n        \"imagenUrl\": \"https://carlosposadaa.com/vino.jpg\"\n    }",
+							"raw": " {\n \t   \"id\": 2,\n        \"nombreProducto\": \"Vino Tinto\",\n        \"precio\": 18000,\n        \"imagenUrl\": \"https://carlosposadaa.com/vino.jpg\"\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -266,8 +266,8 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"type": "text",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDY0MTc2fQ.lczqGpA_JaebCzGbrxfOtgyrbsBD7zAcr7SIf8C7lDI"
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDcwOTE2fQ.O5nCPMkAcUFuYapmA4y0Y1wc6eAXiltPG3vINaVVrKY",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -316,7 +316,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/ordenes/18",
+							"raw": "http://localhost:3000/api/ordenes/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -325,7 +325,7 @@
 							"path": [
 								"api",
 								"ordenes",
-								"18"
+								"3"
 							]
 						}
 					},
@@ -339,7 +339,7 @@
 							{
 								"key": "authorization",
 								"type": "text",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDY0MTc2fQ.lczqGpA_JaebCzGbrxfOtgyrbsBD7zAcr7SIf8C7lDI"
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI"
 							}
 						],
 						"url": {
@@ -364,13 +364,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"type": "text",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6InN1cGVyLWFkbWluIiwiaWF0IjoxNTkyMDY0MTc2fQ.lczqGpA_JaebCzGbrxfOtgyrbsBD7zAcr7SIf8C7lDI"
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoic3VwZXItYWRtaW4iLCJub21icmUiOiJhZG1pbiIsImNvcnJlbyI6IlZlcm9zcGlAZ21haWwuY29tIiwidGVsZWZvbm8iOiI1MDYwMDAiLCJkaXJlY2Npb24iOiJjciA4NWQgbW8gNTMtMjAiLCJpYXQiOjE1ODk3NTUwNTB9.hx1jlPKz7xUoRz5i2cgmBwk8pudCWAVRQUUgh5-U2JI",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"idEstado\": 1\n}",
+							"raw": "{\n        \"idEstado\": 2\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -378,7 +378,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/ordenes/1",
+							"raw": "http://localhost:3000/api/ordenes/18",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -387,7 +387,7 @@
 							"path": [
 								"api",
 								"ordenes",
-								"1"
+								"18"
 							]
 						}
 					},

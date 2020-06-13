@@ -8,7 +8,7 @@ Pedido.crear = async (idUsuario, idFormaPago) => {
     let result = await sequelize.query(
         "INSERT INTO ordenes(idUsuario, idFormaPago, idEstado, horaCreacion, fechaCreacion, fechaActualizacion) VALUES (?, ?, 1, ?, ?, ?)",
         {
-            replacements: [idUsuario, idFormaPago, new Date(), fecha.diaActual(), fecha.diaActual()],
+            replacements: [idUsuario, idFormaPago, fecha.hora(), fecha.diaActual(), fecha.diaActual()],
         }
     );
     

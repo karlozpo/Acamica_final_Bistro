@@ -68,7 +68,7 @@ CREATE TABLE ordenes(
     FOREIGN KEY(idUsuario) REFERENCES usuarios(id),
     FOREIGN KEY(idFormaPago) REFERENCES formaPago(id),
     FOREIGN KEY(idEstado) REFERENCES estadoPedido(id),
-    horaCreacion DATE NOT NULL,
+    horaCreacion TEXT VARCHAR(10) NOT NULL,
     fechaCreacion DATE NOT NULL,
     fechaActualizacion DATE NOT NULL
 );
