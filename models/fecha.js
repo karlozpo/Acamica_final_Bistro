@@ -14,7 +14,7 @@ fecha.hora = function() {
     let d = new Date();
     let n = d.getHours();
     let m = d.getMinutes();
-   let horaActual = n+":"+m;
+   let horaActual = n + ":" + m;
     return horaActual
   }
 

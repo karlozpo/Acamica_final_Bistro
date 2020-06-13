@@ -1,9 +1,6 @@
-const Sequelize = require("sequelize");
+const sequelize = require('../config/configDB');
 const fecha = require("./fecha");
 
-const sequelize = new Sequelize(
-    "mysql://master_carlos:admin8080@automosaiko.tk:3306/master_carlos"
-);
 
 const Pedido = {};
 
@@ -11,19 +8,11 @@ Pedido.crear = async (idUsuario, idFormaPago) => {
     let result = await sequelize.query(
         "INSERT INTO ordenes(idUsuario, idFormaPago, idEstado, horaCreacion, fechaCreacion, fechaActualizacion) VALUES (?, ?, 1, ?, ?, ?)",
         {
-            replacements: [idUsuario, idFormaPago, fecha.hora(), fecha.diaActual(), fecha.diaActual()],
+            replacements: [idUsuario, idFormaPago, new Date(), fecha.diaActual(), fecha.diaActual()],
         }
     );
     
     return result.length > 0 ? result[0] : null;
-    // este es un if en una sola linea 
-    /*
-    if (result.length > 0) {
-      result = result[0];
-       } else {
-        result = null;
-     }
-    */
 };
 
 Pedido.addProductos = async (idOrden, IdProducto, cantidadProductos) => {
@@ -31,6 +20,13 @@ Pedido.addProductos = async (idOrden, IdProducto, cantidadProductos) => {
         replacements: [idOrden, IdProducto, cantidadProductos]
     });
     return result.length > 0 ? result[0] : null;
+    /*
+    if (result.length > 0) {
+      result = result[0];
+       } else {
+        result = null;
+     }
+    */
 };
 
 Pedido.editar = async (id, idEstado) => {

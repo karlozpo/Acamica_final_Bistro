@@ -1,5 +1,5 @@
-CREATE DATABASE delilaBistro;
-USE delilaBistro;
+CREATE DATABASE master_delilaBistro;
+USE master_delilaBistro;
 
 -- Creacion tabla de usuarios
 CREATE TABLE usuarios(
