@@ -50,7 +50,7 @@ config\configDB.js
 En esta ubicacion se encuentra configurado por defecto el servidor de pruebas, pero puedes ingresar tu datos para cambiarlos de la siguiente manera :
 
 ```js
-const bd_name= 'delilaBistro'; // Por defecto es delilaBistro o nombre de tu base de datos;
+const bd_name= 'master_delilaBistro'; // Por defecto es master_delilaBistro o nombre de tu base de datos;
 const bd_user= 'tu_usuario'; // nombre de tu usuario;
 const bd_password= 'tu_password'; // contraseña de tu usuario;
 const bd_host= 'tudominio.com'; // Hosting;
@@ -71,6 +71,8 @@ Para hacer pruebas de la api, puedes usar Postman con el archivo que se encuentr
 scripts/DelilaBistro_final.postman_collection.json
 ```
 en este se muestra la estructura correcta para cada peticion a la API.
+
+Porfavor en el postman generar los nuevos autorization keys y cambiarlos para que funcionen con el archivo postman enviado.
 
 **En el archivo de postman se encuentra**
 1. Usuarios
